@@ -1,38 +1,69 @@
 .bodyClass {
-    position: relative;
-    background-color: black;
+  position: relative;
+  background-color: black;
 }
 .mainImage {
-    position: fixed;
-    
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    clip:rect(0px,auto,800px,0px);
-    bottom: 0px;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  clip: rect(0px, auto, 800px, 0px);
+  bottom: 0px;
+  filter: brightness(50%);
 }
-/* .img-fluid, .mainImage {
-
-    clip:rect(100px,auto,800px,0px);
-    position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-} */
+.homePageText {
+  color: white;
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px 0px 20px 0px;
+  margin: 194px 0px 250px 0px;
+}
 a {
-    color: white !important;
+  color: white !important;
 }
 a:hover {
-    color: rgb(212, 78, 78) !important;
+  color: rgb(180, 20, 20) !important;
 }
 .navbar {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(255,255,255,0) !important;
-    font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0) !important;
+  font-family: "Josefin Sans", sans-serif;
+}
+.flexImages {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  background-color: black;
+  padding-bottom: 500px;
+  padding-top: 100px;
+  display: block;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+  gap: 80px;
+}
+.musicImage {
+  background-color: blue;
+  height: 500px;
+  width: 400px;
+}
+.gamesImage {
+  background-color: aqua;
+  height: 500px;
+  width: 400px;
+}
+.sportImage {
+  background-color: blueviolet;
+  height: 500px;
+  width: 400px;
 }
