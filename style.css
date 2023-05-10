@@ -22,11 +22,8 @@
   padding: 20px 0px 20px 0px;
   margin: 194px 0px 350px 0px;
 }
-a {
+.myNav {
   color: white !important;
-}
-a:hover {
-  color: rgb(180, 20, 20) !important;
 }
 .navbar {
   position: relative;
@@ -61,48 +58,34 @@ a:hover {
   bottom: 10px;
   font-size: larger;
 }
-.musicImage {
-  background-color: blue;
+.imageBoxes {
   height: 500px;
   width: 400px;
   position: relative;
   overflow: hidden;
 }
-.musicImageSrc {
-  width: 800px;
-  height: auto;
+.imageSrc {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
+  transition: transform .2s;
 }
-.gamesImage {
-  background-color: blue;
-  height: 500px;
-  width: 400px;
-  position: relative;
-  overflow: hidden;
+.imageSrc:hover {
+  transform: scale(1.2);
 }
-.gamesImageSrc {
-  width: 400px;
-  position: absolute;
-  height: auto;
-  left: 0px;
-  top: -50px;
+#musicImageSrc {
+  height: 100%;
+  top: 0;
+  left: -50%;
 }
-.sportImage {
-  background-color: blue;
-  height: 500px;
-  width: 400px;
-  position: relative;
-  overflow: hidden;
+#gamesImageSrc {
+  width: 100%;
+  left: 0;
+  top: 0;
 }
-.sportImageSrc {
-  width: 600px;
-  position: absolute;
+#sportImageSrc {
+  width: 100%;
   height: auto;
   left: 0px;
-  bottom: -40px;
+  bottom: 0px;
 }
 .flexboxRibbon {
   background-color: rgb(36, 38, 58, 0.4);
@@ -115,4 +98,31 @@ a:hover {
 }
 #bigger-text-size {
   font-size: 30px;
+}
+.nav-link, .navbar-brand {
+  color: white !important;
+}
+.nav-link:hover, .navbar-brand:hover {
+  color: rgb(180, 20, 20) !important;
+}
+a[class|="flexLinks"] {
+  color: white;
+  text-decoration: none;
+}
+#bounce {
+  animation: bounce 2s infinite;
+  position: relative;
+}
+@keyframes bounce {
+  0%, 25%, 75%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+.homeFooter {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
