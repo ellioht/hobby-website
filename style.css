@@ -5,3 +5,7 @@
     background-color: blue;
     margin: auto;
 }
+
+.navbar {
+    background-color: red !important;
+}
