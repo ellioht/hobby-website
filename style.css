@@ -1,11 +1,38 @@
-#body {
-    background-color: gray;
+.bodyClass {
+    position: relative;
+    background-color: black;
 }
-#header {
-    background-color: blue;
-    margin: auto;
+.mainImage {
+    position: fixed;
+    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    clip:rect(0px,auto,800px,0px);
+    bottom: 0px;
 }
+/* .img-fluid, .mainImage {
 
+    clip:rect(100px,auto,800px,0px);
+    position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+} */
+a {
+    color: white !important;
+}
+a:hover {
+    color: rgb(212, 78, 78) !important;
+}
 .navbar {
-    background-color: red !important;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255,255,255,0) !important;
+    font-family: 'Josefin Sans', sans-serif;
 }
