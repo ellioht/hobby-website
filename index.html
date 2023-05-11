@@ -25,7 +25,7 @@
     <div class="myNav">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Elliot's Hobbies</a>
+          <a class="navbar-brand" href="index.html">Elliot's Hobbies</a>
           <button
             class="navbar-toggler navbar-dark"
             type="button"
@@ -39,10 +39,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Music</a>
-              <a class="nav-link" href="#">Games</a>
-              <a class="nav-link" href="#">Sport</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="musicProduction.html">Music</a>
+              <a class="nav-link" href="games.html">Games</a>
+              <a class="nav-link" href="sport.html">Sport</a>
             </div>
           </div>
         </div>
@@ -56,9 +56,9 @@
         alt="Music Production Studio"
       />
       <div class="homePageText .container-fluid">
-        "Music production isn't just a hobby...
+        I really enjoy making music...
         <br />
-        It's the symphony of my soul."
+        but thats not the only thing.
       </div>
     </div>
 
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="flexImages flex-container">
-        <a class="flexLinks" href="#">
+        <a class="flexLinks" href="musicProduction.html">
           <div class="imageBoxes">
             <div class="flexboxRibbon">
               <p1>
@@ -84,7 +84,7 @@
             <img id="musicImageSrc" class="imageSrc" src="https://images.unsplash.com/photo-1509310202330-aec5af561c6b" alt="music production software">
           </div>
         </a>
-        <a class="flexLinks" href="#">
+        <a class="flexLinks" href="games.html">
           <div class="imageBoxes">
             <div class="flexboxRibbon">
               <p1>
@@ -96,7 +96,7 @@
             <img id="gamesImageSrc" class="imageSrc" src="https://images.unsplash.com/photo-1607356296477-5454f7a7f0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="playstation 5 controller">
           </div>
         </a>
-        <a class="flexLinks" href="#">
+        <a class="flexLinks" href="sport.html">
           <div class="imageBoxes">
             <div class="flexboxRibbon">
               <p1>
@@ -111,14 +111,16 @@
     </div>
     </div>
 
-    <div class="homeFooter">
-      <footer>
+    <footer class="homeFooter">
+      <div>
         <form action="#">
-          <input type="text" placeholder="EMAIL ADDRESS">
-          <button type="submit">SUBMIT</button>
+          <input class="relative" type="text" placeholder="EMAIL ADDRESS" required>
+          <button class="relative" type="submit">SUBMIT</button>
+          <input class="relative" id="terms" type="checkbox" required /> I accept the
+          <a href="#">terms and conditions</a>
         </form>
-      </footer>
-    </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
