@@ -225,6 +225,7 @@ a[class|="flexLinks"] {
   50% {
     background-color: rgb(40, 77, 124);
   }
+}
 .card-img-top {
   position: relative;
   top: 0px !important;
