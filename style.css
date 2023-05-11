@@ -26,16 +26,26 @@
 .container {
   height: 400px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 
 .item {
- 
+ /* background-color: aliceblue; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-.myNav {
-  color: white !important;
+.container-fluid {
+  position: fixed;
+  top: 8px;
 }
 .navbar {
   position: relative;
@@ -135,10 +145,39 @@ a[class|="flexLinks"] {
   margin: auto;
   padding: 20px;
   text-align: center;
+  background-color: black;
 }
 .active {
   opacity: 0.5;
 }
-.relative {
+.submit-box {
+  margin: 10px;
+  width: 360px;
+  background-color: rgb(94, 94, 94);
+  border-style: none;
+}
+.submit-button{
+  background-color: rgb(94, 94, 94);
+  color: white;
+  border: none;
+  margin-right: 22px;
+}
+
+::placeholder {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
   position: relative;
+  top: 2px;
+}
+#musicBody {
+  animation: bgcolor 20s infinite;
+}
+@keyframes bgcolor {
+  0% , 100%  {
+    background-color: black;
+  }
+  50% {
+    background-color: rgb(46, 42, 88);
+  }
 }
