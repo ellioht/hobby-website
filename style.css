@@ -1,6 +1,8 @@
 .bodyClass {
   position: relative;
   background-color: black;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
 }
 .mainImage {
   position: fixed;
@@ -16,11 +18,21 @@
 .homePageText {
   color: white;
   font-size: 40px;
-  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px 0px 20px 0px;
   margin: 194px 0px 350px 0px;
+}
+.container {
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.item {
+ 
 }
 .myNav {
   color: white !important;
@@ -29,7 +41,6 @@
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0) !important;
-  font-family: "Josefin Sans", sans-serif;
 }
 .flexImages {
   padding: 40px 20px 40px 20px;
@@ -51,7 +62,6 @@
   color: white;
   text-align: center;
   padding: 50px 0px 50px 0px;
-  font-family: "Josefin Sans", sans-serif;
 }
 .okCool {
   position: relative;
@@ -125,4 +135,10 @@ a[class|="flexLinks"] {
   margin: auto;
   padding: 20px;
   text-align: center;
+}
+.active {
+  opacity: 0.5;
+}
+.relative {
+  position: relative;
 }
