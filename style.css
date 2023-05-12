@@ -230,3 +230,20 @@ a[class|="flexLinks"] {
   position: relative;
   top: 0px !important;
 }
+.carousel-inner {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+.carousel {
+  max-width: 800px;
+  max-height: 400px; 
+  margin: 0 auto;
+}
+.carousel-control-prev, .carousel-control-next, #carouselExampleIndicators {
+  top: 70% !important; 
+}
+
+.carousel-indicators {
+  position: relative;
+  top: 500px;
+}
