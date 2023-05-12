@@ -230,20 +230,25 @@ a[class|="flexLinks"] {
   position: relative;
   top: 0px !important;
 }
-.carousel-inner {
-  max-width: 100% !important;
-  max-height: 100% !important;
-}
-.carousel {
-  max-width: 800px;
-  max-height: 400px; 
-  margin: 0 auto;
-}
-.carousel-control-prev, .carousel-control-next, #carouselExampleIndicators {
-  top: 70% !important; 
-}
 
-.carousel-indicators {
+.carousel-images-container {
   position: relative;
-  top: 500px;
+  margin: 4px 20px 4px 20px;
+  /* background-color: brown; */
+  padding: 20px;
+  object-fit: cover;
+  max-width: 1000px;
+
+}
+.carousel-item {
+  opacity: 1;
+  position: relative;
+  max-height: 610px;
+}
+.carousel-flex-container {
+  /* background-color: rgb(75, 121, 207); */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
